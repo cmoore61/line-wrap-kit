@@ -1,0 +1,24 @@
+{
+  "name": "line-wrap-kit",
+  "version": "0.1.0",
+  "description": "Text wrapping library with a CLI, plain and JSON output",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/wrap.js",
+  "types": "dist/wrap.d.ts",
+  "bin": {
+    "linewrap": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}
