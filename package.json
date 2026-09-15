@@ -10,13 +10,16 @@
     "linewrap": "dist/cli.js"
   },
   "files": [
-    "dist"
+    "dist",
+    "!dist/*.test.js",
+    "!dist/*.test.d.ts"
   ],
   "engines": {
     "node": ">=18"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "test": "npm run build && node --test dist"
   },
   "devDependencies": {
     "typescript": "^5.5.0"

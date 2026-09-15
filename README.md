@@ -74,6 +74,9 @@ npm run build
 This compiles `src/` to `dist/` with `tsc`. There are no runtime
 dependencies - only the TypeScript compiler itself is needed to build.
 
+Run `npm test` to build and run the unit tests with Node's built-in test
+runner (`node --test`) - no test framework dependency needed.
+
 ## Known limitations
 
 Width is measured in Unicode code points, not display columns, so wide
